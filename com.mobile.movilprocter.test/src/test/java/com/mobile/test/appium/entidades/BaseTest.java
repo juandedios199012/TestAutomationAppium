@@ -1,4 +1,4 @@
-package com.mobile.test.appium.driver;
+package com.mobile.test.appium.entidades;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
