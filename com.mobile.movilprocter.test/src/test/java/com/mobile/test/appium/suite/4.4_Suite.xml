@@ -2,20 +2,40 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="false">
 
-	<parameter name="deviceName" value="0123456789ABCDEF" />
-	<parameter name="version" value="4.4" />
+	<parameter name="deviceName" value="WTR7S15B30000351" />
+	<parameter name="version" value="5.1" />
 	<parameter name="platformName" value="Android" />
-	<parameter name="appPackage" value="com.android.calculator2" />
-	<parameter name="appActivity" value="com.android.calculator2.Calculator" />
+	<parameter name="appPackage" value="com.uniflex.movilprocter" />
+	<parameter name="appActivity" value="com.uniflex.movilprocter.PantallaPrincipalActivity" />
 	<parameter name="url" value="http://127.0.0.1:4723/wd/hub" />
 	
-	<test name="Suma">
+	<test name="LoginApp">
 		<classes>
-			<class name="com.appium.training.second_sample.tests.FirstTest">
+			<class name="com.mobile.test.appium.entidades.LoginTest">
 				<methods>
-					<include name="Suma" />
+					<include name="LoginApp" />
 				</methods>
 			</class>
 		</classes>
-	</test> <!-- Test -->
+	</test>
+	<test name="sincronizar">
+		<classes>
+			<class name="com.mobile.test.appium.entidades.SincronizacionTest">
+				<methods>
+					<include name="sincronizar" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="registrarNoPedido">
+		<classes>
+			<class name="com.mobile.test.appium.entidades.NoPedidoTest">
+				<methods>
+					<include name="registrarNoPedido" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Test -->
 </suite> <!-- Suite -->

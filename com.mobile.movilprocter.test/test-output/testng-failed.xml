@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="appPackage" value="com.uniflex.movilprocter"/>
+  <parameter name="appActivity" value="com.uniflex.movilprocter.PantallaPrincipalActivity"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="WTR7S15B30000351"/>
+  <parameter name="version" value="5.1"/>
+  <parameter name="url" value="http://127.0.0.1:4723/wd/hub"/>
+  <test name="LoginApp">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.LoginTest">
+        <methods>
+          <include name="LoginApp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.LoginTest -->
+    </classes>
+  </test> <!-- LoginApp -->
+  <test name="sincronizar">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.SincronizacionTest">
+        <methods>
+          <include name="sincronizar"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.SincronizacionTest -->
+    </classes>
+  </test> <!-- sincronizar -->
+  <test name="registrarNoPedido">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.NoPedidoTest">
+        <methods>
+          <include name="registrarNoPedido"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.NoPedidoTest -->
+    </classes>
+  </test> <!-- registrarNoPedido -->
+  <test name="LoginApp(failed)">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.LoginTest">
+        <methods>
+          <include name="LoginApp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.LoginTest -->
+      <class name="com.mobile.test.appium.entidades.SincronizacionTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.SincronizacionTest -->
+      <class name="com.mobile.test.appium.entidades.NoPedidoTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.NoPedidoTest -->
+    </classes>
+  </test> <!-- LoginApp(failed) -->
+  <test name="sincronizar(failed)">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.LoginTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.LoginTest -->
+      <class name="com.mobile.test.appium.entidades.SincronizacionTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="sincronizar"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.SincronizacionTest -->
+      <class name="com.mobile.test.appium.entidades.NoPedidoTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.NoPedidoTest -->
+    </classes>
+  </test> <!-- sincronizar(failed) -->
+  <test name="registrarNoPedido(failed)">
+    <classes>
+      <class name="com.mobile.test.appium.entidades.LoginTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.LoginTest -->
+      <class name="com.mobile.test.appium.entidades.SincronizacionTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.SincronizacionTest -->
+      <class name="com.mobile.test.appium.entidades.NoPedidoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registrarNoPedido"/>
+        </methods>
+      </class> <!-- com.mobile.test.appium.entidades.NoPedidoTest -->
+    </classes>
+  </test> <!-- registrarNoPedido(failed) -->
+</suite> <!-- Failed suite [Suite] -->
