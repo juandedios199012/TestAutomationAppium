@@ -9,6 +9,7 @@
 	<parameter name="appActivity" value="com.uniflex.movilprocter.PantallaPrincipalActivity" />
 	<parameter name="url" value="http://127.0.0.1:4723/wd/hub" />
 	
+	
 	<test name="LoginApp">
 		<classes>
 			<class name="com.mobile.test.appium.entidades.LoginTest">
