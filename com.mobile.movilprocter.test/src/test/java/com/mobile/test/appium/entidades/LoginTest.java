@@ -9,9 +9,9 @@ public class LoginTest extends BaseTest{
 	@Test
 	public void LoginApp() {
 		LoginPage login = new LoginPage(driver);
-		login.ingresarEmpresa("digalimenta");
-		login.ingresarUsuario("02a05");
-		login.ingresarUsuario("1234");
+		login.ingresarEmpresa("company");
+		login.ingresarUsuario("user");
+		login.ingresarUsuario("123");
 		//Assert.assertTrue(calc.validarResultado("5"), "El resultado no es el esperado");
 	}
 
